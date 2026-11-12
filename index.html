@@ -50,11 +50,11 @@
   .jumps a{font-weight:600;text-decoration:none}
   .jumps a:hover{text-decoration:underline}
   .jumps span{color:var(--muted);font-weight:400}
-  .job{display:grid;grid-template-columns:72px 1fr;border-top:3px solid var(--green);margin-top:44px;padding-top:28px;scroll-margin-top:20px}
-  .num{font-family:var(--serif);font-size:44px;line-height:1;color:var(--copper)}
-  .where{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--green);padding:4px 10px;border-radius:3px;margin-bottom:10px}
+  .job{display:grid;grid-template-columns:150px 1fr;gap:24px;border-top:3px solid var(--green);margin-top:44px;padding-top:28px;scroll-margin-top:20px}
+  .office{font-family:var(--serif);font-size:24px;line-height:1.15;color:var(--copper)}
+  .office small{display:block;font:600 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px}
   .job h3{font-size:30px;margin-bottom:14px}
-  @media (max-width:560px){.job{grid-template-columns:1fr}.num{font-size:34px;margin-bottom:8px}}
+  @media (max-width:560px){.job{grid-template-columns:1fr;gap:10px}}
   .job p{margin:0 0 14px}
   .job h4{font-size:15px;margin:18px 0 6px}
   .job ul{margin:0 0 18px;padding-left:20px}
@@ -122,9 +122,8 @@
     </ol>
 
     <article class="job" id="rehoboth">
-      <div class="num">01</div>
+      <div class="office">Rehoboth Beach<small>Office</small></div>
       <div>
-      <div class="where">Rehoboth Beach Office</div>
       <h3>Associate Attorney, Real Estate</h3>
       <p>Our Rehoboth Beach office is looking for an associate with two to five years of real estate experience. The work includes residential and commercial settlements, title review, and appearances before Sussex County and town planning and zoning boards.</p>
       <h4>Requirements</h4>
@@ -138,9 +137,8 @@
     </article>
 
     <article class="job" id="dover">
-      <div class="num">02</div>
+      <div class="office">Dover<small>Office</small></div>
       <div>
-      <div class="where">Dover Office</div>
       <h3>Associate Attorney, Litigation</h3>
       <p>Our Dover office is looking for an associate with at least three years of litigation experience. The work includes civil cases in Delaware's trial courts and advising the towns and public bodies we represent in Kent County.</p>
       <h4>Requirements</h4>
