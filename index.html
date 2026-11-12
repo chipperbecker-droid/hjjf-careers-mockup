@@ -45,16 +45,23 @@
 
   main > h2{font-size:32px;margin-bottom:6px}
   .lead{color:var(--muted);margin:0 0 8px}
-  .job{border-top:1px solid var(--line);padding:32px 0}
-  .job h3{font-size:28px}
-  .where{font-size:14px;font-weight:600;color:var(--copper);margin:4px 0 14px}
+  .jumps{list-style:none;margin:18px 0 8px;padding:0;border-left:3px solid var(--copper)}
+  .jumps li{padding:4px 0 4px 14px}
+  .jumps a{font-weight:600;text-decoration:none}
+  .jumps a:hover{text-decoration:underline}
+  .jumps span{color:var(--muted);font-weight:400}
+  .job{display:grid;grid-template-columns:72px 1fr;border-top:3px solid var(--green);margin-top:44px;padding-top:28px;scroll-margin-top:20px}
+  .num{font-family:var(--serif);font-size:44px;line-height:1;color:var(--copper)}
+  .where{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--green);padding:4px 10px;border-radius:3px;margin-bottom:10px}
+  .job h3{font-size:30px;margin-bottom:14px}
+  @media (max-width:560px){.job{grid-template-columns:1fr}.num{font-size:34px;margin-bottom:8px}}
   .job p{margin:0 0 14px}
   .job h4{font-size:15px;margin:18px 0 6px}
   .job ul{margin:0 0 18px;padding-left:20px}
   .job li{margin-bottom:4px}
   .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:11px 20px;border-radius:6px}
   .btn:hover{background:#1f5249}
-  .note{border-top:1px solid var(--line);padding-top:28px;color:var(--muted)}
+  .note{border-top:1px solid var(--line);margin-top:48px;padding-top:28px;color:var(--muted)}
   .note h3{font-size:22px;color:var(--ink);margin-bottom:6px}
   .note p{margin:0 0 10px}
 
@@ -107,12 +114,18 @@
   </aside>
 
   <main>
-    <h2>Open Positions</h2>
+    <h2>Open Positions (2)</h2>
     <p class="lead">Both positions are full-time and based in the office. Salary is competitive, and benefits include health and dental insurance and a 401(k).</p>
+    <ol class="jumps">
+      <li><a href="#rehoboth">Associate Attorney, Real Estate</a> <span>Rehoboth Beach</span></li>
+      <li><a href="#dover">Associate Attorney, Litigation</a> <span>Dover</span></li>
+    </ol>
 
-    <article class="job">
-      <h3>Associate Attorney, Real Estate</h3>
+    <article class="job" id="rehoboth">
+      <div class="num">01</div>
+      <div>
       <div class="where">Rehoboth Beach Office</div>
+      <h3>Associate Attorney, Real Estate</h3>
       <p>Our Rehoboth Beach office is looking for an associate with two to five years of real estate experience. The work includes residential and commercial settlements, title review, and appearances before Sussex County and town planning and zoning boards.</p>
       <h4>Requirements</h4>
       <ul>
@@ -120,12 +133,15 @@
         <li>2–5 years of real estate or transactional experience</li>
         <li>Strong drafting skills and attention to detail</li>
       </ul>
-      <a class="btn" href="mailto:info@delawarelaw.com?subject=Associate%20Attorney%20-%20Rehoboth%20Beach">Apply by email</a>
+      <a class="btn" href="mailto:info@delawarelaw.com?subject=Associate%20Attorney%20-%20Rehoboth%20Beach">Apply for Rehoboth position</a>
+      </div>
     </article>
 
-    <article class="job">
-      <h3>Associate Attorney, Litigation</h3>
+    <article class="job" id="dover">
+      <div class="num">02</div>
+      <div>
       <div class="where">Dover Office</div>
+      <h3>Associate Attorney, Litigation</h3>
       <p>Our Dover office is looking for an associate with at least three years of litigation experience. The work includes civil cases in Delaware's trial courts and advising the towns and public bodies we represent in Kent County.</p>
       <h4>Requirements</h4>
       <ul>
@@ -133,7 +149,8 @@
         <li>3+ years of litigation experience</li>
         <li>Strong writing and courtroom skills</li>
       </ul>
-      <a class="btn" href="mailto:info@delawarelaw.com?subject=Associate%20Attorney%20-%20Dover">Apply by email</a>
+      <a class="btn" href="mailto:info@delawarelaw.com?subject=Associate%20Attorney%20-%20Dover">Apply for Dover position</a>
+      </div>
     </article>
 
     <div class="note">
