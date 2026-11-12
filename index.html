@@ -33,15 +33,12 @@
   .banner::after{content:"";position:absolute;inset:0;background:rgba(23,63,57,.82)}
   .banner .wrap{position:relative;z-index:1;padding:64px 24px 56px}
   .banner h1{font-size:52px}
-  .banner p{margin:10px 0 0;font-size:18px;max-width:560px;opacity:.92}
+  .banner p{margin:10px 0 0;font-size:18px;max-width:720px;opacity:.92}
 
-  .layout{display:grid;grid-template-columns:1fr 320px;gap:56px;padding:56px 24px 80px}
-  .apply{grid-column:2;grid-row:1;position:sticky;top:24px;align-self:start;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--copper);border-radius:8px;padding:26px}
-  .apply h2{font-size:26px;margin-bottom:10px}
-  .apply p{margin:0 0 14px;font-size:15px}
-  .apply .email{display:block;font-size:20px;font-weight:600;margin:0 0 14px;word-break:break-all}
-  .apply .phones{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin:0}
-  main{grid-column:1;grid-row:1}
+  .banner .send{margin-top:18px;font-size:17px;opacity:1}
+  .banner .send a{color:#fff;font-weight:600}
+  .layout{padding:56px 24px 80px}
+  .lead,.job p,.job ul,.note p{max-width:720px}
 
   main > h2{font-size:32px;margin-bottom:6px}
   .lead{color:var(--muted);margin:0 0 8px}
@@ -65,13 +62,7 @@
   .note h3{font-size:22px;color:var(--ink);margin-bottom:6px}
   .note p{margin:0 0 10px}
 
-  @media (max-width:860px){
-    .layout{grid-template-columns:1fr;gap:32px;padding-top:32px}
-    .apply,main{grid-column:1}
-    .apply{grid-row:1;position:static}
-    main{grid-row:2}
-    .banner h1{font-size:42px}
-  }
+  @media (max-width:860px){.layout{padding-top:32px}.banner h1{font-size:42px}}
 
   footer{background:var(--ink);color:rgba(255,255,255,.75);font-size:14px;padding:44px 0 28px}
   footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:28px}
@@ -101,17 +92,11 @@
   <div class="wrap">
     <h1>Careers</h1>
     <p>We are hiring attorneys for our Dover and Rehoboth Beach offices.</p>
+    <p class="send">To apply, email your resume, cover letter, and a writing sample to <a href="mailto:info@delawarelaw.com?subject=Attorney%20Application">info@delawarelaw.com</a>.</p>
   </div>
 </div>
 
 <div class="wrap layout">
-  <aside class="apply">
-    <h2>How to Apply</h2>
-    <p>Email your resume, cover letter, and a writing sample to:</p>
-    <a class="email" href="mailto:info@delawarelaw.com?subject=Attorney%20Application">info@delawarelaw.com</a>
-    <p>Please put the position and office in the subject line.</p>
-    <p class="phones">Questions? Call Dover at (302) 734-7401 or Rehoboth at (302) 227-9441.</p>
-  </aside>
 
   <main>
     <h2>Open Positions (2)</h2>
@@ -154,6 +139,7 @@
     <div class="note">
       <h3>Not seeing the right position?</h3>
       <p>We accept applications from attorneys at any time. Send your materials to <a href="mailto:info@delawarelaw.com?subject=General%20Attorney%20Application">info@delawarelaw.com</a> and we will keep them on file.</p>
+      <p>Questions? Call our Dover office at (302) 734-7401 or our Rehoboth Beach office at (302) 227-9441.</p>
     </div>
   </main>
 </div>
